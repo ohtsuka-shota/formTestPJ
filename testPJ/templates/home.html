@@ -10,7 +10,8 @@
 
     <body>
         <h1>Hello devProject</h1>
-        <button type="button" class="btn btn-primary"><a href="{% url 'login' %}" "#" class="link-light">Login</a></button>
+        <button type="button" class="btn btn-primary"><a href="{% url 'login' %}" "#" class="link-light">Sign in</a></button>
+        <button type="button" class="btn btn-info"><a href="{% url 'userCreate' %}" "#" class="link-light">Sign up</a></button>
         <button type="button" class="btn btn-danger"><a href="{% url 'admin:index' %}" "#" class="link-light">Admin</a></button>
         <button type="button" class="btn btn-warning"><a href="{% url 'polls:polls' %}" "#" class="link-light">Polls</a></button>
     </body>
