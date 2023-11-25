@@ -11,6 +11,7 @@ index_view = TemplateView.as_view(template_name="index.html")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("index/", login_required(index_view), name="index"),
+    path("polls/", include("polls.urls")),
     path("auth/", include("django.contrib.auth.urls"), name="login"),
     path('', homeView.as_view(), name="home"),
 ]
