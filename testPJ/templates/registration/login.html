@@ -1,9 +1,6 @@
 {% block HeadContent %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<meta name="description" content="">
-<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Hugo 0.112.5">
 <title>Signin</title>
 <style>
     .login-form {
@@ -13,17 +10,6 @@
     }
     .form-group {
         margin-bottom: 1rem;
-    }
-    .form-control, .btn {
-        min-height: 38px;
-    }
-    .btn {
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .btn-block {
-        display: block;
-        width: 100%;
     }
 </style>
 
@@ -52,9 +38,8 @@
             </div>
 
             <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
             </div>
-
 
             {% if form.errors %}
                 {% for key,value in form.errors.items %}
@@ -65,4 +50,4 @@
         <p class="mt-5 mb-3 text-body-secondary">© 2017-2023</p>
     </dev>
 </div>
-{% endblock BodyContent %}
+{% endblock BodyContent %}`
