@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
-from .views import MyForm
+from .views import MyFormView
 
 app_name = "MyForm"
 
 urlpatterns = [
-    path('', MyForm.as_view(), name="MyForm"),
+    path('', MyFormView.as_view(), name="MyFormPage"),
 ]
