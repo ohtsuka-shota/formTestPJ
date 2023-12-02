@@ -1,0 +1,15 @@
+.btn-todo {
+    background: blue;
+    padding: 1%;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.btn-todo:hover {
+    background-color: midnightblue;
+}
+
+.btn-todo-a {
+    color: white;
+    text-decoration: none;
+}

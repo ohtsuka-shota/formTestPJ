@@ -1,6 +1,6 @@
 from django.db import models
 
-PRIORITY = (("danger","high"), ("info","normal"), ("success","low"))
+PRIORITY = (("High","high"), ("Normal","normal"), ("Low","low"))
 
 class todoTable(models.Model):
     title = models.CharField(max_length=100)

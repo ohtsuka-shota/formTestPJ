@@ -1,8 +1,23 @@
-Hello! todoList!
+{% load static %}
 
-{% for todo in object_list %}
-{{ todo.title}}
-{{ todo.memo }}
-{{ todo.priority }}
-{{ todo.deadline }}
-{% endfor %}
+<!DOCTYPE html>
+    <html lang="ja">
+    
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport", content="width=device-width">
+            <title>list-detail ListPage</title>
+            <link href="{% static 'todoStyleSheet/style.css' %}" rel="stylesheetx">
+        </head>
+
+        <body>
+            <h1>todoList</h1>
+            {% for todo in object_list %}
+                <p>
+                <a href="{% url 'todoApp:todoDetailPage' todo.pk %}">{{ todo.title }}</a>
+                </p>
+            {% endfor %}
+        </body>
+
+    </html>
+
