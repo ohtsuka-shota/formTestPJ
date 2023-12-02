@@ -12,21 +12,31 @@ body{
     font-family: serif;
 }
 
-.todo-title {
+.todo-link {
     color: white;
     margin-left: 1%;
+    text-decoration: none;
 }
 
 .todo-li {
-    background-color: rgb(26, 201, 142);
-    color: white;
+    background-color: rgb(0, 255, 170);
     list-style: none;
     padding:1%;
     width: 95%;
 }
 
-.btn-check-detail {
-    background-color: rgb(1, 30, 20);
+.btn {
+    background-color: rgb(14, 95, 67);
     color: white;
-    width: 30%
+    width: 30%;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(0, 17, 11);
+}
+
+.btn-div {
+    text-align: right;
+    margin-right: 2%;
 }

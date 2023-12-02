@@ -25,10 +25,16 @@ body{
 }
 
 .btn-back {
-    background-color: rgb(1, 30, 20);
+    background-color: rgb(14, 95, 67);
+    color: white;
     width: 30%;
+}
+
+.btn-back:hover {
+    background-color: rgb(0, 17, 11);
 }
 
 .btn-text {
     color: white;
+    text-decoration: none;
 }

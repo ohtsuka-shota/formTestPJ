@@ -15,10 +15,11 @@
             {% for todo in object_list %}
                 <ul>
                 <li class="todo-li">{{ todo.title }}<br>
-                    <button type="button" class="btn-check-detail"><a href="{% url 'todoApp:todoDetailPage' todo.pk %}" class="todo-title">詳細確認</a></button>
+                    <button type="button" class="btn"><a href="{% url 'todoApp:todoDetailPage' todo.pk %}" class="todo-link">詳細確認</a></button>
                 </li>
                 </ul>
             {% endfor %}
+            <div class="btn-div"><button type="button" class="btn"><a href="{% url 'homePage' %}" class="btn">ホーム画面に戻る</a></button></div>
         </body>
 
     </html>
