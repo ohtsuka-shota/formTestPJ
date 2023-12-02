@@ -7,15 +7,17 @@
             <meta charset="utf-8">
             <meta name="viewport", content="width=device-width">
             <title>list-detail ListPage</title>
-            <link href="{% static 'todoStyleSheet/style.css' %}" rel="stylesheetx">
+            <link href="{% static 'todoStyleSheet/todoListStyle.css' %}" rel="stylesheet">
         </head>
 
         <body>
-            <h1>todoList</h1>
+            <h1 class="title">ToDoList</h1>
             {% for todo in object_list %}
-                <p>
-                <a href="{% url 'todoApp:todoDetailPage' todo.pk %}">{{ todo.title }}</a>
-                </p>
+                <ul>
+                <li class="todo-li">{{ todo.title }}<br>
+                    <button type="button" class="btn-check-detail"><a href="{% url 'todoApp:todoDetailPage' todo.pk %}" class="todo-title">詳細確認</a></button>
+                </li>
+                </ul>
             {% endfor %}
         </body>
 

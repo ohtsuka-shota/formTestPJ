@@ -1,0 +1,32 @@
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.title {
+    background-color: grey;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: serif;
+}
+
+.todo-title {
+    color: white;
+    margin-left: 1%;
+}
+
+.todo-li {
+    background-color: rgb(26, 201, 142);
+    color: white;
+    list-style: none;
+    padding:1%;
+    width: 95%;
+}
+
+.btn-check-detail {
+    background-color: rgb(1, 30, 20);
+    color: white;
+    width: 30%
+}

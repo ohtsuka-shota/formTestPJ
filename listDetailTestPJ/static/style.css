@@ -1,6 +1,21 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.top-title {
+    background-color: grey;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: serif;  
+}
+
 .btn-todo {
     background: blue;
     padding: 1%;
+    margin-top: 1%;
     border-radius: 6px;
     transition: .3s;
 }
