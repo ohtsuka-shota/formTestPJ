@@ -3,7 +3,7 @@ from django.urls import reverse_lazy
 from .forms import MyCreate
 from .models import MyCreateTable
  
-class HogeCreateView(CreateView):
+class MyCreateView(CreateView):
     template_name = "MyCreate.html"
     model = MyCreateTable
     form_class = MyCreate
