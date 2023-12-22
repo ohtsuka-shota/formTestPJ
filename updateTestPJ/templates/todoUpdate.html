@@ -37,7 +37,7 @@
             <div class="task-create-form">
                 <h3>タスク完了期日</h3>
                 <input class="task-create-content" type="date" placeholder="Deadline"
-                       name="{{ form.deadline.html_name }}" value="{{ object.deadline }}" autofocus="" autocapitalize="none" maxlength="250" required="">
+                       name="{{ form.deadline.html_name }}" value="{{ object.deadline|date:'Y-m-d' }}" autofocus="" autocapitalize="none" maxlength="250" required="">
             </div>
 
             <div id="submit-form">
